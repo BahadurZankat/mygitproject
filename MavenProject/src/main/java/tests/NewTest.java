@@ -25,7 +25,8 @@ public class NewTest {
  
   @AfterClass
   public void afterClass() {
-   driver.quit();
+	  System.out.println("Ed");
+   //driver.quit();
   }
  
 }
