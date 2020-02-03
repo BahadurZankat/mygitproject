@@ -30,7 +30,7 @@ public class NewTest {
   @BeforeClass
   public void beforeClass() {
    
-   System.setProperty("webdriver.chrome.driver", "C:\\Users\\my pc\\Desktop\\Eclipse_Juno\\chromedriver.exe");
+   System.setProperty("webdriver.chrome.driver", "C:\\chromedriver.exe");
    driver = new ChromeDriver();
    
   }
