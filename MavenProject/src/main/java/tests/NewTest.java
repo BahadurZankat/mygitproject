@@ -14,7 +14,7 @@ public class NewTest {
   @Test
   public void openMyBlog() throws InterruptedException {
      driver.get("http://demo.guru99.com/test/newtours/");
-     Thread.sleep(1000*60);
+     //Thread.sleep(1000*60);
      System.out.println(driver.getCurrentUrl().toString());
      System.out.println(driver.getTitle().toString());
      driver.findElement(By.name("userName")).sendKeys("guru99");
@@ -22,7 +22,7 @@ public class NewTest {
      driver.findElement(By.name("password")).sendKeys("guru99");
      
      driver.findElement(By.name("submit")).click();
-     Thread.sleep(1000*60);
+     //Thread.sleep(1000*60);
      System.out.println(driver.getCurrentUrl().toString());
      System.out.println(driver.getTitle().toString());
   }
@@ -38,7 +38,7 @@ public class NewTest {
   @AfterClass
   public void afterClass() {
 	  System.out.println("Ed");
-   //driver.quit();
+   driver.quit();
   }
  
 }
